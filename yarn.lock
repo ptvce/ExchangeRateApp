@@ -1417,7 +1417,7 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@expo/vector-icons@^12.0.0", "@expo/vector-icons@^12.0.4":
+"@expo/vector-icons@^12.0.4", "@expo/vector-icons@^12.0.5":
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-12.0.5.tgz#bc508ad05fb7e9a3e008704977cfec6c18aa7728"
   integrity sha512-zWvHBmkpbi1KrPma6Y+r/bsGI6MjbM1MBSe6W9A4uYMLhNI5NR4JtTnqxhf7g1XdpaDtBdv5aOWKEx4d5rxnhg==
@@ -2653,6 +2653,13 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
+axios@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
 babel-jest@^25.2.0, babel-jest@^25.5.1:
   version "25.5.1"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-25.5.1.tgz#bc2e6101f849d6f6aec09720ffc7bc5332e62853"
@@ -3805,7 +3812,7 @@ expo-application@~3.2.0:
   resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-3.2.0.tgz#d029445cbc486b66f31ec3b8d556334119cebf48"
   integrity sha512-NDPQAtB05Jeiw771bDYsecbLrLA39X33Jk8uP1VUVdHMy6cCfJrL8PSDssgMLElAzR94K8toeqdGsGx9mVv8zw==
 
-expo-asset@~8.3.2, expo-asset@~8.3.3:
+expo-asset@^8.3.3, expo-asset@~8.3.3:
   version "8.3.3"
   resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.3.3.tgz#b54ab9999efb3d2086329fc5b1bed04fede8f682"
   integrity sha512-qCm5d14tzswY8DcmRJ+0WkY9tc3OiVikBAiw2hCMC+bFpK/bEdqy4Zwfd69MFIAJ0taJpHWhdUoBRO0byQLlfg==
@@ -3816,7 +3823,7 @@ expo-asset@~8.3.2, expo-asset@~8.3.3:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
-expo-constants@~11.0.1:
+expo-constants@^11.0.2, expo-constants@~11.0.1:
   version "11.0.2"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-11.0.2.tgz#069930145908fef7d76bf72a1a874a1d4621af82"
   integrity sha512-CVjM+FbOMe/nFOSly5lnj0seMAYsjjc6+q3X8nIXG+gtw9iNBLwMX3Fz308rxiaPRJw+TBdd5/mcGJdNfoS+ew==
@@ -3839,7 +3846,7 @@ expo-file-system@~11.1.3:
     expo-modules-core "~0.2.0"
     uuid "^3.4.0"
 
-expo-font@~9.2.1:
+expo-font@^9.2.1, expo-font@~9.2.1:
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-9.2.1.tgz#c7586b009bf3c4c2427d33c360015d354960bd70"
   integrity sha512-sT9nm2Dt1nTLz+Ir1fSpyzqH40eJX324Wu5sPyvT2Ivnmu2rw2rxt3gNa8Kvdb8BPRz4qrRvHR/E+YKMqa6ZgQ==
@@ -4201,6 +4208,16 @@ find-up@~5.0.0:
   dependencies:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
+
+flag-icon-css@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/flag-icon-css/-/flag-icon-css-3.5.0.tgz#430747d5cb91e60babf85494de99173c16dc7cf2"
+  integrity sha512-pgJnJLrtb0tcDgU1fzGaQXmR8h++nXvILJ+r5SmOXaaL/2pocunQo2a8TAXhjQnBpRLPtZ1KCz/TYpqeNuE2ew==
+
+follow-redirects@^1.14.0:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.3.tgz#6ada78118d8d24caee595595accdc0ac6abd022e"
+  integrity sha512-3MkHxknWMUtb23apkgz/83fDoe+y+qr0TdgacGIA7bew+QLBo3vdgEN2xEsuXNivpFy4CyDhBBZnNZOtalmenw==
 
 fontfaceobserver@^2.1.0:
   version "2.1.0"
@@ -6971,6 +6988,11 @@ react-native-reanimated@~2.2.0:
     fbjs "^3.0.0"
     mockdate "^3.0.2"
     string-hash-64 "^1.0.3"
+
+react-native-responsive-screen@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-responsive-screen/-/react-native-responsive-screen-1.4.2.tgz#45280826d24f9accbfdf46a36cb8e6d780f76f28"
+  integrity sha512-BLYz0UUpeohrib7jbz6wDmtBD5OmiuMRko4IT8kIF63taXPod/c5iZgmWnr5qOnK8hMuKiGMvsM3sC+eHX/lEQ==
 
 react-native-safe-area-context@3.2.0:
   version "3.2.0"

@@ -14,8 +14,11 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+// import TabOneScreen from '../screens/TabOneScreen';
+// import TabTwoScreen from '../screens/TabTwoScreen';
+import TabUSD from '../screens/TabUSD';
+import TabEUR from '../screens/TabEUR';
+import More from '../screens/More';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -58,38 +61,34 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="TabEUR"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneScreen}
-        options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
-            <Pressable
-              onPress={() => navigation.navigate('Modal')}
-              style={({ pressed }) => ({
-                opacity: pressed ? 0.5 : 1,
-              })}>
-              <FontAwesome
-                name="info-circle"
-                size={25}
-                color={Colors[colorScheme].text}
-                style={{ marginRight: 15 }}
-              />
-            </Pressable>
-          ),
-        })}
+        name="TabEUR"
+        component={TabEUR}
+        options={{
+          title: 'EUR',
+          tabBarIcon: ({ color }) => <TabBarIcon name="clipboard" color='blue' />,
+        }}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoScreen}
+        name="TabUSD"
+        component={TabUSD}
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'USD',
+          tabBarIcon: ({ color }) => <TabBarIcon name="check" color='blue' />,
+
+        }}
+      />
+
+      <BottomTab.Screen
+        name="More"
+        component={More}
+        options={{
+          title: 'More',
+          tabBarIcon: ({ color }) => <TabBarIcon name="list" color='blue' />,
         }}
       />
     </BottomTab.Navigator>
