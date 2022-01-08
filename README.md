@@ -1,6 +1,6 @@
-<img src="icon.png" align="right" />
 
-<h4 align="center">A minimal Store for keeping your data <a href="http://electron.atom.io" target="_blank">Vanda</a>.</h4>
+
+<h4 align="center">A minimal Exchange Rate.</h4>
 
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 <br />
 
-![screenshot](https://github.com/ptvce/VandaMoviesWithFiltering/blob/master/assets/img/rec2.gif)
+<img src="appPic.PNG" align="center" />
 
 ## Key Features
 
