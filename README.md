@@ -15,34 +15,15 @@
 ## Key Features
 
 * Skills required:
-  - Html, Css, Bootstrap, Javascript, React, Redux, Error handling, Validation, Axios, JWT
+  - Html, Css, Javascript, React Native, Axios
   
 * API:
   - Free
   
-* Featurs:
-  - Display, Insert, Delete, Filter, Search, Sort, Pagination 
- 
-* Components:
-  - Login
-  - Logout
-  - Register
-  - Label
-  - Input
-  - Select
-  - Button
-  - List
-  - Form
-  - Table Header
-  - Table Body
-  - Table
-  - Pagination
-  - Like
-  - NavBar
-  - SearchBox
+
   
 * Cross platform
-  - Windows, macOS and Linux ready.
+  - IOS, Android
 
 ## How To Use
 
@@ -50,10 +31,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ptvce/VandaMoviesWithFiltering.git
+$ git clone https://github.com/ptvce/ExchangeRateApp.git
 
 # Go into the repository
-$ cd VandaMoviesWithFiltering
+$ cd ExchangeRateApp
 
 # Install dependencies
 $ npm install
