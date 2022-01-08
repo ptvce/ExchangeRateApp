@@ -10,7 +10,7 @@
 </p>
 <br />
 
-<img src="appPic.PNG" align="center" />
+<img src="https://github.com/ptvce/ExchangeRateApp/blob/master/assets/images/appPic.PNG" align="center" />
 
 ## Key Features
 
